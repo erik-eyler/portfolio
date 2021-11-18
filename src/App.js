@@ -1,23 +1,16 @@
 import './App.css';
-import { Route } from 'react-router-dom'
-import PopularWords from "./components/PopularWords"
-import Evntz from './components/EVNTZ';
-import YrWeekend from "./components/YrWeeknd"
+import {Link} from 'react-router-dom'
 
 function App() {
   return (
     <div>
-      <Route path="/popularwords">
-        <PopularWords />
-      </Route>
+      <p>Test</p>
+      <Link to="https://suspicious-shirley-aff7c1.netlify.app/">Evntz</Link>
+      <Link to="https://erik-eyler.github.io/popular-words/">Popular Words</Link>
+      <Link to ="https://yr-weeknd.netlify.app/">Yr Weeknd</Link>
 
-      <Route path="/evntz">
-        <Evntz />
-      </Route>
 
-      <Route>
-        <YrWeekend path="/yrweeknd"/>
-      </Route>
+
     </div>
     
   );
