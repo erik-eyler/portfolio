@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route } from 'react-router-dom'
+import PopularWords from "./components/PopularWords"
+import Evntz from './components/EVNTZ';
+import YrWeekend from "./components/YrWeeknd"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Route path="/popularwords">
+        <PopularWords />
+      </Route>
+
+      <Route path="/evntz">
+        <Evntz />
+      </Route>
+
+      <Route>
+        <YrWeekend path="/yrweeknd"/>
+      </Route>
     </div>
+    
   );
 }
 
